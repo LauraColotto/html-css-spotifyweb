@@ -3,11 +3,30 @@
   margin: 0;
   padding: 0;
   font-family: 'Poppins', sans-serif;
+  font-size: 14px;
 }
 
 a{
   text-decoration: none;
   color: white;
+}
+
+h2{
+  color: white;
+  font-size: 26px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+h3{
+  color: white;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 18px;
+}
+
+p{
+  color: #7d7f84;
+  font-weight: 500;
 }
 
 ul{
@@ -36,18 +55,20 @@ main{
   background-color: #141922;
 }
 
-footer{
-  height: 80px;
-  background-color: #282828;
-}
+
 
 aside{
   display: flex;
+  flex-direction: column;
   height: 100%;
   width:300px;
-  background-color: #000000;
+  background-color: #000;
   padding: 15px;
-  flex-direction: column;
+
+}
+footer{
+  height: 80px;
+  background-color: #282828;
 }
 
 
@@ -55,11 +76,14 @@ aside{
 /* Logo */
 
 .logo{
+  max-height: 50px;
   background-color: green;
+
 }
 
 .logo img{
   max-height: 50px;
+
 }
 
 /* Menù */
@@ -89,7 +113,6 @@ aside{
 .main-content{
   display: flex;
   flex-direction: column;
-  align-items: center;
   height: 100%;
   width: calc(100% - 300px);
   padding: 15px;
@@ -97,8 +120,10 @@ aside{
 }
 
 .main-section{
-  padding-top: 80px;
+  padding: 80px 30px 20px;
 }
+
+/* Barra Top */
 
 .top-bar{
   position: fixed;
@@ -114,9 +139,12 @@ aside{
   background-color: rgba(0, 0 , 0, 0.5);
 }
 
+/* Menù centrale */
+
 .central-menu{
   display: flex;
   justify-content: center;
+  /* background-color: blue; */
 }
 
 .central-menu li{
@@ -125,6 +153,7 @@ aside{
 }
 
 .central-menu li a{
+  position: relative;
   color: #7d7f84;
   text-transform: uppercase;
   font-weight: 500;
@@ -132,4 +161,48 @@ aside{
 
 .central-menu li:last-child{
   margin-right: 0;
+}
+
+.central-menu li a:hover{
+  background-color: #adff2f;
+  height: 3px;
+  width: 30px;
+  margin: auto;
+}
+
+/* Sezione Album */
+
+.music{
+  /* background-color: red; */
+  /* width: 100%; */
+  padding: 30px 0;
+}
+
+.music-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  padding-top: 30px;
+  /* background-color: yellow; */
+}
+
+.music-box h3{
+  margin: 10px 0;
+
+
+}
+
+.music img{
+  width: 200px;
+}
+
+.music-box{
+  text-align: center;
+  width: 200px;
+  margin-right: 30px;
+}
+
+.popular-album{
+  border-radius: 100%
 }
