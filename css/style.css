@@ -10,6 +10,10 @@ a{
   color: white;
 }
 
+ul{
+  list-style: none;
+}
+
 .btn{
   color: white;
   font-weight: 700;
@@ -29,18 +33,71 @@ a{
 main{
   display: flex;
   height: calc(100% - 80px);
-  background-color: blue;
+  background-color: #141922;
 }
 
 footer{
   height: 80px;
-  background-color: red;
+  background-color: #282828;
 }
 
 aside{
+  display: flex;
   height: 100%;
   width:300px;
-  background-color: grey;
+  background-color: #000000;
+  padding: 15px;
+  flex-direction: column;
+}
+
+
+
+/* Logo */
+
+.logo{
+  background-color: green;
+}
+
+.logo img{
+  max-height: 50px;
+}
+
+/* Menù */
+
+.menu{
+  background-color: pink;
+}
+
+.menu img{
+  display: inline-block;
+  max-height: 30px;
+}
+
+/* Playlist */
+
+.playlist{
+  background-color: yellow;
+}
+
+.playlist-list ul{
+  overflow-y: auto;
+  height: calc(100% - 200px);
+}
+
+/* Main */
+
+.main-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  width: calc(100% - 300px);
+  padding: 15px;
+  overflow-y: auto;
+}
+
+.main-section{
+  padding-top: 80px;
 }
 
 .top-bar{
@@ -50,9 +107,29 @@ aside{
   right: 0;
   z-index: 1;
   height: 80px;
-  width: calc(100% - 300px);
   padding: 0 40px;
+  width: calc(100% - 300px);
   justify-content: flex-end;
   align-items: center;
   background-color: rgba(0, 0 , 0, 0.5);
+}
+
+.central-menu{
+  display: flex;
+  justify-content: center;
+}
+
+.central-menu li{
+  display: inline-block;
+  margin-right: 25px;
+}
+
+.central-menu li a{
+  color: #7d7f84;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.central-menu li:last-child{
+  margin-right: 0;
 }
