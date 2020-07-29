@@ -65,6 +65,8 @@ main{
 aside{
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
+  /* justify-content: flex-start; */
   height: 100%;
   width:300px;
   background-color: #000;
@@ -78,13 +80,13 @@ aside{
 /* LOGO */
 
 .logo{
-  max-height: 50px;
-  background-color: green;
+  height: 80px;
+  width: 100%;
 
 }
 
 .logo img{
-  max-height: 50px;
+  max-width: 150px;
 
 }
 
@@ -94,9 +96,17 @@ aside{
   background-color: pink;
 }
 
+
+.menu a{
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+
 .menu img{
   display: inline-block;
   max-height: 30px;
+
 }
 
 /* PLAYLIST */
@@ -165,18 +175,15 @@ aside{
   margin-right: 0;
 }
 
-.central-menu li::after{
+.central-menu a:hover::after{
   content: "";
-  display: none;
+  display: block;
   background-color: #adff2f;
   height: 2px;
   width: 30px;
   margin: auto;
 }
 
-.central-menu li:hover .central-menu li::after{
-  display: block;
-}
 
 /* SEZIONE ALBUM */
 
@@ -270,7 +277,6 @@ footer{
   /* width: 15%; */
   margin: auto;
   padding-right: 10px;
-  flex-grow: 1;
   /* background-color: purple; */
 }
 .lateral-footer-dx{
@@ -281,7 +287,6 @@ footer{
   margin: auto;
   padding-right: 10px;
   align-items: center;
-  flex-grow: 1;
   /* background-color: purple; */
 }
 
@@ -341,6 +346,7 @@ footer li{
 .player{
   display: flex;
   flex-direction: column;
+  flex-wrap: nowrap;
   /* width: 80%; */
   flex-grow: 2;
   /* background-color: gray; */
