@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
 
     <title>Spotify</title>
@@ -48,7 +49,6 @@
           <!-- Barra in alto -->
           <div class="top-bar">
             <a href="#"><div class="btn">effettua l'upgrade</div></a>
-
           </div>
           <!-- /Barra in alto -->
 
@@ -76,37 +76,37 @@
               <h2>Recently played</h2>
                 <div class="music-container">
                   <div class="music-box">
-                    <div class="overlay"></div>
+                    <div class="overlay"><i class="far fa-play-circle"></i></div>
                     <img src="img/metal_lifting.jpg" alt="Album">
                     <h3>Heavy Metal</h3>
                     <p>Subtitle</p>
                   </div>
                   <div class="music-box">
-                    <div class="overlay"></div>
+                    <div class="overlay"><i class="far fa-play-circle"></i></div>
                     <img src="img/stranger.jpeg" alt="Album">
                     <h3>Stranger things, Vol.1 (a Netflix Original Series Soundtrack)</h3>
                     <p>Subtitle</p>
                   </div>
                   <div class="music-box">
-                    <div class="overlay"></div>
+                    <div class="overlay"><i class="far fa-play-circle"></i></div>
                     <img src="img/aquietplace.jpeg" alt="Album">
                     <h3>A quiet place</h3>
                     <p>Subtitle</p>
                   </div>
                   <div class="music-box">
-                    <div class="overlay"></div>
+                    <div class="overlay"><i class="far fa-play-circle"></i></div>
                     <img src="img/split.jpeg" alt="Album">
                     <h3>Split</h3>
                     <p>Subtitle</p>
                   </div>
                   <div class="music-box">
-                    <div class="overlay"></div>
+                    <div class="overlay"><i class="far fa-play-circle"></i></div>
                     <img src="img/cure.jpeg" alt="Album">
                     <h3>A cure for wellness</h3>
                     <p>Subtitle</p>
                   </div>
                   <div class="music-box">
-                    <div class="overlay"></div>
+                    <div class="overlay"><i class="far fa-play-circle"></i></div>
                     <img src="img/sinister.jpeg" alt="Album">
                     <h3>Sinister</h3>
                     <p>Subtitle</p>
@@ -119,12 +119,12 @@
                 <p>Più ascolti, più accurati saranno i suggerimenti</p>
                   <div class="music-container">
                     <div class="music-box">
-                      <div class="overlay"></div>
+                      <div class="overlay"><i class="far fa-play-circle"></i></div>
                       <img src="img/radar.jpeg" alt="Album">
                       <h3>Relase Radar</h3>
                     </div>
                     <div class="music-box">
-                      <div class="overlay"></div>
+                      <div class="overlay"><i class="far fa-play-circle"></i></div>
                       <img src="img/mixdaily.jpeg" alt="Album">
                       <h3>Daily Mix 1</h3>
                     </div>
@@ -136,23 +136,22 @@
                 <p>Più ascolti, più accurati saranno i suggerimenti</p>
                   <div class="music-container">
                     <div class="music-box">
-                      <div class="overlay"></div>
-                      <img  class="popular-album" src="img/youg.jpeg" alt="Album">
+                      <div class="album">
+                        <div class="overlay-circle"><i class="far fa-play-circle"></i></div>
+                        <img  class="popular-album" src="img/youg.jpeg" alt="Album">
+                      </div>
                       <h3>Lana del Ray</h3>
                     </div>
                     <div class="music-box">
-                      <div class="overlay"></div>
+                      <div class="overlay-circle"><i class="far fa-play-circle"></i></div>
                       <img class="popular-album" src="img/einaudi.jpeg" alt="Album">
                       <h3>Enaudi</h3>
                     </div>
                   </div>
             </section>
-            <!-- /Musica -->
-
           </div>
+            <!-- Sezione Principale -->
           </section>
-
-        <!-- Sezione Principale -->
         <!-- /Contenuto principale -->
 
       </main>
@@ -160,7 +159,10 @@
 
       <!-- Footer -->
       <footer>
+        <div class="lateral-footer"></div>
 
+        <div class="player"></div>
+        <div class="lateral-footer"></div>
       </footer>
       <!-- /Footer -->
     </div>

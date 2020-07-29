@@ -66,14 +66,11 @@ aside{
   padding: 15px;
 
 }
-footer{
-  height: 80px;
-  background-color: #282828;
-}
 
 
 
-/* Logo */
+
+/* LOGO */
 
 .logo{
   max-height: 50px;
@@ -86,7 +83,7 @@ footer{
 
 }
 
-/* Menù */
+/* MENU' */
 
 .menu{
   background-color: pink;
@@ -97,7 +94,7 @@ footer{
   max-height: 30px;
 }
 
-/* Playlist */
+/* PLAYLIST */
 
 .playlist{
   background-color: yellow;
@@ -108,7 +105,7 @@ footer{
   height: calc(100% - 200px);
 }
 
-/* Main */
+/*MAIN*/
 
 .main-content{
   display: flex;
@@ -123,7 +120,7 @@ footer{
   padding: 80px 30px 20px;
 }
 
-/* Barra Top */
+/*BARRA TOP */
 
 .top-bar{
   position: fixed;
@@ -139,7 +136,7 @@ footer{
   background-color: rgba(0, 0 , 0, 0.5);
 }
 
-/* Menù centrale */
+/* MENU' CENTRALE */
 
 .central-menu{
   display: flex;
@@ -163,19 +160,32 @@ footer{
   margin-right: 0;
 }
 
-.central-menu li a:hover{
+.central-menu li::after{
+  content: "";
+  display: none;
   background-color: #adff2f;
-  height: 3px;
+  height: 2px;
   width: 30px;
   margin: auto;
 }
 
-/* Sezione Album */
+.central-menu li:hover .central-menu li::after{
+  display: block;
+}
+
+/* SEZIONE ALBUM */
 
 .music{
   /* background-color: red; */
   /* width: 100%; */
   padding: 30px 0;
+}
+
+.music i{
+  color: white;
+  text-align: center;
+  font-size: 80px;
+  line-height: 200px;
 }
 
 .music-container{
@@ -188,9 +198,8 @@ footer{
 }
 
 .music-box h3{
+  width: 200px;
   margin: 10px 0;
-
-
 }
 
 .music img{
@@ -198,11 +207,67 @@ footer{
 }
 
 .music-box{
+  position: relative;
   text-align: center;
-  width: 200px;
   margin-right: 30px;
+}
+
+.album{
+  width: 200px;
+}
+
+.overlay{
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 200px;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.music-box:hover .overlay{
+  display: block;
+}
+
+.overlay-circle{
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 200px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 100%;
+}
+
+.music-box:hover .overlay-circle{
+  display: block;
 }
 
 .popular-album{
   border-radius: 100%
+}
+
+
+
+/* FOOTER */
+
+footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 80px;
+  background-color: #282828;
+  padding: 10px 15px;
+}
+
+.lateral-footer{
+  width: 25%;
+  background-color: purple;
+}
+
+.player{
+  width: 50%;
+  background-color: gray;
 }
