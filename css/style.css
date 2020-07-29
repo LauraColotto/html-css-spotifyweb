@@ -95,47 +95,103 @@ aside a{
 /* MENU' */
 
 .menu{
+  padding: 25px 0;
   width: 100%;
 }
 
 
-.menu li{
-  margin-top: 5px;
-}
-
-.menu a{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-.menu a:hover{
+aside a:hover{
   color: white;
 }
 
 .menu img{
   display: inline-block;
-  max-height: 30px;
+  max-width: 30px;
   margin-right: 15px;
-
+  vertical-align: middle;
+  padding-top: 5px;
 }
 
 /* PLAYLIST */
 
+.secondary-nav{
+  /* background-color: yellow; */
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  color: #7d7f84;
+}
+
+
+.playlist-title{
+  height: 70px;
+
+}
+
+.add-playlist{
+  padding-top: 10px;
+
+}
+
+.add-btn{
+  display: inline-table;
+  height: 40px;
+  width: 40px;
+  background-color: #7d7f84;
+  vertical-align: middle;
+  text-align: center;
+  margin-right: 15px;
+}
+
+.add-btn i{
+  color: black;
+  font-size: 20px;
+  line-height: 40px;
+}
+
 .playlist{
-  background-color: yellow;
-}
-
-.playlist-list ul{
   overflow-y: auto;
-  height: calc(100% - 200px);
+  height: calc(100% - 70px);
+
 }
 
-/*MAIN*/
+.playlist li{
+  margin: 15px 0;
+}
+
+
+/* ASIDE BOTTOM */
+
+.side-bottom{
+  width: 100%;
+}
+
+.side-bottom img{
+  display: inline-block;
+  max-width: 20px;
+  margin-right: 15px;
+  vertical-align: middle;
+}
+
+.download{
+  border-bottom: 1px solid grey;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+.user img{
+  border-radius: 100px;
+  padding: 2px;
+  background-color: gray;
+}
+
+.user h3{
+  display: inline-table;
+}
+
+/*SEZIONE PRINCIPALE*/
 
 .main-content{
-  display: flex;
-  flex-direction: column;
   height: 100%;
   width: calc(100% - 300px);
   padding: 15px;
@@ -165,8 +221,7 @@ aside a{
 /* MENU' CENTRALE */
 
 .central-menu{
-  display: flex;
-  justify-content: center;
+  text-align: center;
   height: 30px;
   /* background-color: blue; */
 }
@@ -214,8 +269,6 @@ aside a{
 
 .music-container{
   display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
   flex-wrap: wrap;
   padding-top: 30px;
   /* background-color: yellow; */
