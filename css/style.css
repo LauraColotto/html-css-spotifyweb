@@ -24,6 +24,11 @@ h3{
   line-height: 18px;
 }
 
+h4{
+  color: white;
+  font-weight: 700;
+}
+
 p{
   color: #7d7f84;
   font-weight: 500;
@@ -212,10 +217,6 @@ aside{
   margin-right: 30px;
 }
 
-.album{
-  width: 200px;
-}
-
 .overlay{
   display: none;
   position: absolute;
@@ -262,12 +263,81 @@ footer{
   padding: 10px 15px;
 }
 
-.lateral-footer{
-  width: 25%;
-  background-color: purple;
+.lateral-footer-sx{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 15%;
+  margin: auto;
+  padding-right: 10px;
+  /* background-color: purple; */
+}
+.lateral-footer-dx{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 15%;
+  margin: auto;
+  padding-right: 10px;
+  align-items: center;
+  /* background-color: purple; */
 }
 
+.lateral-footer-sx i{
+  font-size: 16px;
+  color: #7d7f84;
+  margin-left: 10px;
+}
+.lateral-footer-dx i{
+  font-size: 16px;
+  color: white;
+  margin-right: 10px;
+
+}
+
+
+footer li{
+  display: inline-table;
+  line-height: 40px;
+}
+
+.album-player{
+  display: inline-table;
+}
+
+
+.album-played img{
+  width: 40px;
+  margin-right: 10px;
+}
+
+.album-title{
+  display: inline-block;
+}
+
+
+.volume{
+  position: relative;
+}
+
+.volume-bar{
+  height: 2px;
+  width: 100px;
+  background-color: #7d7f84;
+}
+
+.volume-over{
+  position: absolute;
+  top:0;
+  left:0;
+  height: 2px;
+  width: 35px;
+  background-color: white;
+}
+
+
+
 .player{
-  width: 50%;
+  width: 80%;
   background-color: gray;
 }
