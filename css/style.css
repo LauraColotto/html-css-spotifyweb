@@ -266,20 +266,22 @@ footer{
 .lateral-footer-sx{
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  width: 15%;
+  justify-content: flex-start;
+  /* width: 15%; */
   margin: auto;
   padding-right: 10px;
+  flex-grow: 1;
   /* background-color: purple; */
 }
 .lateral-footer-dx{
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  width: 15%;
+  /* width: 15%; */
   margin: auto;
   padding-right: 10px;
   align-items: center;
+  flex-grow: 1;
   /* background-color: purple; */
 }
 
@@ -301,10 +303,9 @@ footer li{
   line-height: 40px;
 }
 
-.album-player{
-  display: inline-table;
+.album-played{
+  margin-right: 50px;
 }
-
 
 .album-played img{
   width: 40px;
@@ -340,7 +341,8 @@ footer li{
 .player{
   display: flex;
   flex-direction: column;
-  width: 80%;
+  /* width: 80%; */
+  flex-grow: 2;
   /* background-color: gray; */
   color: white;
 }
